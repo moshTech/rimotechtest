@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
         title: 'Rimo Tech',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          primarySwatch: Colors.purple,
-        ),
+            // primarySwatch: Colors.purple,
+            ),
         home: LoginUI(),
         routes: {
           '/dashboard': (context) => DashboardUI(),
