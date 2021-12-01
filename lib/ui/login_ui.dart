@@ -56,7 +56,7 @@ class LoginUI extends StatelessWidget {
                         'Sign in to your account',
                         style: GoogleFonts.lato(
                             color: Colors.white,
-                            fontSize: 25,
+                            fontSize: 20,
                             fontWeight: FontWeight.w500),
                       ),
                       const SizedBox(
@@ -67,7 +67,7 @@ class LoginUI extends StatelessWidget {
                         style: GoogleFonts.lato(
                             color: Colors.white,
                             height: 2,
-                            fontSize: 17,
+                            fontSize: 13,
                             fontWeight: FontWeight.w300),
                       )
                     ],
@@ -172,7 +172,7 @@ class LoginUI extends StatelessWidget {
                             Text(
                               'Don’t have a Settl account?',
                               style: GoogleFonts.lato(
-                                  fontSize: 16, fontWeight: FontWeight.w500),
+                                  fontSize: 12, fontWeight: FontWeight.w500),
                             ),
                             const SizedBox(
                               width: 5,
@@ -181,7 +181,7 @@ class LoginUI extends StatelessWidget {
                               'Create an account',
                               style: GoogleFonts.lato(
                                   color: const Color.fromRGBO(79, 22, 153, 1),
-                                  fontSize: 16,
+                                  fontSize: 12,
                                   fontWeight: FontWeight.w500),
                             ),
                           ],

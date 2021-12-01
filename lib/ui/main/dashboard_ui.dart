@@ -31,7 +31,7 @@ class DashboardUI extends StatelessWidget {
                         CircleAvatar(
                           backgroundImage:
                               Image.asset('assets/images/image 4.png').image,
-                          radius: 27,
+                          radius: 20,
                         ),
                         const SizedBox(
                           width: 10,
@@ -40,7 +40,7 @@ class DashboardUI extends StatelessWidget {
                           'Hi Sade, ',
                           style: GoogleFonts.lato(
                               color: const Color.fromRGBO(24, 24, 24, 1),
-                              fontSize: 20,
+                              fontSize: 15,
                               fontWeight: FontWeight.w700),
                         )
                       ],
@@ -80,6 +80,9 @@ class DashboardUI extends StatelessWidget {
           backgroundColor: Colors.white,
           type: BottomNavigationBarType.fixed,
           selectedItemColor: const Color.fromRGBO(79, 22, 153, 1),
+          // unselectedLabelStyle: GoogleFonts.lato(fontSize: 12),
+          selectedFontSize: 12,
+          unselectedFontSize: 12,
           onTap: ctrl.onTap,
           items: [
             BottomNavigationBarItem(
@@ -296,7 +299,7 @@ class Home extends StatelessWidget {
             'Get Started',
             style: GoogleFonts.lato(
                 color: const Color.fromRGBO(24, 24, 24, 1),
-                fontSize: 20,
+                fontSize: 15,
                 fontWeight: FontWeight.w500),
           ),
           const SizedBox(
@@ -306,7 +309,7 @@ class Home extends StatelessWidget {
             children: [
               Expanded(
                   child: Container(
-                height: 150,
+                height: 110,
                 decoration: BoxDecoration(
                     color: const Color.fromRGBO(248, 243, 255, 1),
                     borderRadius: BorderRadius.circular(13)),
@@ -315,11 +318,11 @@ class Home extends StatelessWidget {
                     Container(),
                     Positioned(
                       left: 15,
-                      top: 50,
+                      top: 40,
                       child: Text('Send \nMoney',
                           style: GoogleFonts.lato(
                               color: const Color.fromRGBO(64, 26, 109, 1),
-                              fontSize: 20,
+                              fontSize: 15,
                               fontWeight: FontWeight.w500)),
                     ),
                     Positioned(
@@ -339,7 +342,7 @@ class Home extends StatelessWidget {
               ),
               Expanded(
                   child: Container(
-                height: 150,
+                height: 110,
                 decoration: BoxDecoration(
                     color: const Color.fromRGBO(248, 243, 255, 1),
                     borderRadius: BorderRadius.circular(13)),
@@ -348,11 +351,11 @@ class Home extends StatelessWidget {
                     Container(),
                     Positioned(
                       left: 15,
-                      top: 50,
+                      top: 40,
                       child: Text('Request \nMoney',
                           style: GoogleFonts.lato(
                               color: const Color.fromRGBO(64, 26, 109, 1),
-                              fontSize: 20,
+                              fontSize: 15,
                               fontWeight: FontWeight.w500)),
                     ),
                     Positioned(
@@ -376,7 +379,7 @@ class Home extends StatelessWidget {
             children: [
               Expanded(
                   child: Container(
-                height: 150,
+                height: 110,
                 decoration: BoxDecoration(
                     color: const Color.fromRGBO(248, 243, 255, 1),
                     borderRadius: BorderRadius.circular(13)),
@@ -385,11 +388,11 @@ class Home extends StatelessWidget {
                     Container(),
                     Positioned(
                       left: 15,
-                      top: 50,
+                      top: 40,
                       child: Text('Create \nWallet',
                           style: GoogleFonts.lato(
                               color: const Color.fromRGBO(64, 26, 109, 1),
-                              fontSize: 20,
+                              fontSize: 15,
                               fontWeight: FontWeight.w500)),
                     ),
                     Positioned(
@@ -409,7 +412,7 @@ class Home extends StatelessWidget {
               ),
               Expanded(
                   child: Container(
-                height: 150,
+                height: 110,
                 decoration: BoxDecoration(
                     color: const Color.fromRGBO(252, 241, 243, 1),
                     borderRadius: BorderRadius.circular(13)),
@@ -418,11 +421,11 @@ class Home extends StatelessWidget {
                     Container(),
                     Positioned(
                       left: 15,
-                      top: 50,
+                      top: 40,
                       child: Text('Upgrade your \nAccount',
                           style: GoogleFonts.lato(
                               color: const Color.fromRGBO(64, 26, 109, 1),
-                              fontSize: 20,
+                              fontSize: 15,
                               fontWeight: FontWeight.w500)),
                     ),
                     Positioned(
@@ -448,12 +451,12 @@ class Home extends StatelessWidget {
               Text('Recent Transactions',
                   style: GoogleFonts.lato(
                       color: const Color.fromRGBO(24, 24, 24, 1),
-                      fontSize: 20,
+                      fontSize: 14,
                       fontWeight: FontWeight.w500)),
               Text('See all',
                   style: GoogleFonts.lato(
                       color: const Color.fromRGBO(79, 22, 153, 1),
-                      fontSize: 20,
+                      fontSize: 14,
                       fontWeight: FontWeight.w500))
             ],
           ),
@@ -472,7 +475,7 @@ class Home extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10)),
                     margin: EdgeInsets.zero,
                     child: SizedBox(
-                      height: 100,
+                      height: 80,
                       width: double.infinity,
                       child: Padding(
                         padding: const EdgeInsets.all(16.0),
@@ -484,7 +487,7 @@ class Home extends StatelessWidget {
                               backgroundImage:
                                   Image.asset('assets/images/image 4.png')
                                       .image,
-                              radius: 35,
+                              radius: 20,
                             ),
                             const SizedBox(
                               width: 10,
@@ -498,16 +501,16 @@ class Home extends StatelessWidget {
                                       style: GoogleFonts.lato(
                                           color: const Color.fromRGBO(
                                               24, 24, 24, 1),
-                                          fontSize: 14,
+                                          fontSize: 11,
                                           fontWeight: FontWeight.w500)),
                                   const SizedBox(
-                                    height: 15,
+                                    height: 10,
                                   ),
                                   Text('Sent',
                                       style: GoogleFonts.lato(
                                           color: const Color.fromRGBO(
                                               79, 22, 153, 1),
-                                          fontSize: 12,
+                                          fontSize: 11,
                                           fontWeight: FontWeight.w500))
                                 ],
                               ),
@@ -521,16 +524,16 @@ class Home extends StatelessWidget {
                                       style: GoogleFonts.lato(
                                           color: const Color.fromRGBO(
                                               24, 24, 24, 1),
-                                          fontSize: 15,
+                                          fontSize: 11,
                                           fontWeight: FontWeight.w500)),
                                   const SizedBox(
-                                    height: 15,
+                                    height: 10,
                                   ),
                                   Text('Aug 12, 2020',
                                       style: GoogleFonts.lato(
                                           color: const Color.fromRGBO(
                                               79, 22, 153, 1),
-                                          fontSize: 12,
+                                          fontSize: 11,
                                           fontWeight: FontWeight.w500))
                                 ],
                               ),
