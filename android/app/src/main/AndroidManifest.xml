@@ -1,5 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.rimotest">
+
+    <!-- Permissions options for the `internet` group -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
    <application
         android:label="rimotest"
         android:icon="@mipmap/ic_launcher">
